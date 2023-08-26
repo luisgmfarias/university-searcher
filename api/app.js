@@ -4,7 +4,7 @@ const axios = require("axios");
 const cors = require("cors");
 
 const app = express();
-const PORT = 4000;
+const PORT = 5000;
 
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
@@ -28,5 +28,7 @@ app.get("/universities", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log("listening on port 4000");
+  console.log("listening on port 5000");
 });
+
+module.exports = app;
