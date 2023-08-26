@@ -6,6 +6,12 @@ const cors = require("cors");
 const app = express();
 const PORT = 4000;
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET");
+  app.use(cors());
+  next();
+});
 
 app.get("/universities", async (req, res) => {
   try {
