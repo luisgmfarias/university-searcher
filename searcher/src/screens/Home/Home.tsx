@@ -42,11 +42,6 @@ export const Home = () => {
   };
 
   const getSlice = () => {
-    if (page === 1) {
-      return 5;
-    } else if (page === 2) {
-      return 10;
-    }
     return page * 5;
   };
 
