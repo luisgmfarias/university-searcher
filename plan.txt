@@ -1,0 +1,5 @@
+- mobile responsive
+- vercel hosting (frontend and backend)
+- reactjs with TS and expressjs JS 
+- no need database
+- shopify or nextui 
