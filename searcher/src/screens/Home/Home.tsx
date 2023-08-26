@@ -25,7 +25,7 @@ export const Home = () => {
   const handleSearch = async (country: string | null) => {
     try {
       const response = await fetch(
-        `${process.env.API_URL}universities?country=${country}`
+        `${process.env.REACT_APP_API_URL}universities?country=${country}`
       );
       const data = await response.json();
 
